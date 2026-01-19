@@ -1,0 +1,27 @@
+What it is:
+
+it is an Open payment system that enables any website, app or serviec to request and collect payment before delivering content or services.
+In this the payement is directly accessible through http requests.
+
+Problems it solves:
+
+micropayment barriers
+Ai agent autonomy bottlenecks
+and so many others
+
+
+How it works:
+
+Step 1: Request -> Quote
+the client requests a resource ------ the server replies with http 402 payment required(with JSON payload that contains:
+Price, SUpported netwrok and Facilitotor endpoint for verification).
+
+at this point, the client knows exactly what to pay and where.
+
+
+Step 2: Pay -> Verify
+the client generates a signed payment payload and retries the request with the same payload, adding an X-PAYMENT header.
+Then the server forwards this payload to the facilitators ednpoint.
+the facilitator then verifies the signature and confirms that the patment parameters are valid.
+
+Step 3: Settle -> deliver

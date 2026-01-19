@@ -1,0 +1,42 @@
+Proof Of Stake: 
+
+-> Its a consensus mechanism that allows the network to reach agreement on the state of the blockchain.
+-> It is a more energy efficient alternative to Proof Of Work.
+-> In PoS, the validators are the ones who have the most stake in the network.
+-> The more stake you have, the more likely you are to be a validator.
+
+To become a validator, one must stake atleast 32 ETH to the deposit contract.
+and must run the software on its system. 
+
+-> software consists of three components:
+* validator client
+* execution client
+* consensus client
+
+-> validator client is responsible for signing and attesting the blocks and proposing new ones.
+-> execution client is responsible for executing the transactions and storing the state.
+-> consensus client is responsible for coordinating the validators and proposing the new state.
+
+How Transactions are processed:
+
+1. User creates and sign a transaction and send it to the ethereum network. 
+-> this is usually done using a wallet, web3.js, ether.js, etc.  Under the hood user is sending a JSON RPC request to the node.
+
+2. Transaction is validated by the network and then broadcasted to all the nodes in the network.
+-> in this the normal checks are performed such as user has enough balance, transaction is valid, etc.
+
+3. Once the transaction is validated  by the network, it is added to the mempool.
+-> mempool is a pool of transactions that are waiting to be included in the block.
+
+4. the node that will create the next block is selected randomly with the help of RANDAO. 
+-> RANDAO is a random number generator that is used to select the node that will create the next block.
+
+5. The selected node will take the transaction from the mempool and execute it by its execution client.
+-> the execution client will execute the transaction and store the state.
+
+6. then it send the block to the consensus client, which will broadcast it to all the other nodes in the network.
+
+7. Once the block is broadcasted to the network, the other nodes will validate the block.
+-> they will check if the block is valid, if it is, they will add it to their blockchain.
+
+
