@@ -1,0 +1,13 @@
+What is Restaking?
+-> 
+
+
+Every restaking system has 4 layers:
+
+Layer 1: Base chain security
+
+Layer 2: Restaking Middleware
+
+Layer 3: External Services (AVSs) 
+
+Layer 4: Governance / Social Layer

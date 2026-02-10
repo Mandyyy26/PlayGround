@@ -1,0 +1,16 @@
+-> Eigen layer provides economic security as a service.
+
+* for developer: It allows them to rent the massive security of ethereum existing validator set.
+
+* For Stakers: It provides a way to earn extra yield on already staked ETH on Ethereum.
+
+The problem it is solving is:
+-> Bootstrapping problem
+-> security fragmentation
+-> Capital Inefficiency
+
+EXAMPLE: 
+Lets say we are building a new ROllup that needs to store massive data securely.
+WIthout EigneLaye => we would have to build a new netwrok of node to store that data securely.
+With EigenLayer => we could use EigenDA(a data availability service) secure by Ethereum's 
+                                restakers.
